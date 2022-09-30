@@ -48,6 +48,7 @@ p {
     margin-top: 100px;
     padding: 20px;
     width: 150px;
+    font-size: 20px;
   }
 
   li a {
@@ -80,10 +81,25 @@ p {
 
   
   .grid-container div {
-    text-align: justify;
+    text-align: center;
     padding: 0px 30px;
     font-size: 30px;
   }
 
+
+  @media screen and (min-width: 1000px) {
+    p {
+      text-align: center;
+    }
+   
+}
   
-  
+  @media screen and (max-width: 999px) {
+    p {
+        text-align: left;
+    }
+    .grid-container div{
+        padding:0px 10px;
+        font-size:10px;
+    }
+  }
