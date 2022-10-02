@@ -112,13 +112,16 @@ input:checked +label {
 
 */
 
-/* Toggle Effect */
+/* Toggle Effect 
 input:checked ~ label {
   background-image: url(close.png);
 }
 input:checked ~ .menu-content {
   max-height: 100%;
 }
+*/
+
+
 
 /*icon is from the noun project, created by Rohith M S*/
 
@@ -147,7 +150,7 @@ input:checked ~ .menu-content {
     font-size: 30px;
   }
 
-/*not sure what all of this does, will have to ask*/
+/*these are my conditionals, supposed to change some settings for when the screen gets smaller*/
 
   @media screen and (min-width: 1000px) {
     p {
@@ -165,3 +168,5 @@ input:checked ~ .menu-content {
         font-size:10px;
     }
   }
+
+  
