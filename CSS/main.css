@@ -1,3 +1,5 @@
+/*main styling*/
+
 body {
     background-image: url("../img/background.jpg");
     background-size: 2500px;
@@ -14,30 +16,30 @@ p {
   
   h1 {
     color: rgb(105,45,142);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
   h2 {
     color:rgb(105,45,142);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
   h3{
     color:rgb(105,45,142);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
   h4 {
     color:lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
   h5{
     color:lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
   h6{
     color: lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*menu settings*/
@@ -169,4 +171,128 @@ input:checked ~ .menu-content {
     }
   }
 
+
+  /*this is my contact page*/
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid darkgrey; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
   
+  /* Style the submit button with a specific background color etc */
+
+  input[type=submit] {
+    background-color: rgb(139,169,128);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: rgb(139,200,175);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+  }
+
+
+  /*photography page layout*/
+
+  .item1 { grid-area: logo; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: header; }
+.item4 { grid-area: photos; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    'logo header header header'
+    'menu photos photos photos'
+    'menu photos photos photos';
+    gap: 10px;
+    padding: 10px 10px;
+  }
+
+  
+  .grid-container div {
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 30px;
+  }
+
+/*menu design*/
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    margin-top: 100px;
+    padding: 20px;
+    width: 150px;
+    font-size: 20px;
+  }
+
+  li a {
+    display: contents;
+    color: lightgray;
+  }
+
+  li a:hover {
+    color: darkgray;
+  }
+
+  .active {
+    color: rgb(139,169,128)
+  }
+
+  /*image overlay settings*/
+
+  .container {
+    position: sticky;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .container:hover .overlay {
+    opacity: 75%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
