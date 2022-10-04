@@ -1,6 +1,6 @@
 /*main styling*/
 
-body {
+.home {
     background-image: url("../img/background.jpg");
     background-size: 2500px;
     background-position: center;
@@ -9,38 +9,122 @@ body {
     color: darkgrey;
 }
 
+.contact {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60%;
+  color: darkgrey;
+}
+
+.imgdes {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60%;
+  color: darkgrey;
+}
+
+.photo {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60%;
+  color: darkgrey;
+}
+
+.proddes {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60%;
+  color: darkgrey;
+}
+
+.resume {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60%;
+  color: darkgrey;
+}
+
+
+/*font styling*/
+
+
 p { 
-    font-size: large;
+    font-size: 15px;
     color: darkgrey;
 }
   
   h1 {
-    color: rgb(105,45,142);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
 }
 
   h2 {
-    color:rgb(105,45,142);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45;
 }
 
   h3{
-    color:rgb(105,45,142);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
   h4 {
     color:lightgrey;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }
   h5{
     color:lightgrey;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
   h6{
     color: lightgrey;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
+
+
+
+
+
+
+/*flexbox settigs*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex: 20%;
+  padding: 10px;
+}
+
+.menu {
+  flex: 80%;
+  padding: 10px;
+}
+
+.heading {
+  flex: 100%;
+  padding: 10px;
+}
+
 
 /*menu settings*/
 
@@ -50,23 +134,121 @@ p {
     margin-top: 100px;
     padding: 20px;
     width: 150px;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   li a {
     display: block;
     color: lightgray;
+    text-decoration: none;
   }
 
   li a:hover {
     color: darkgray;
+  } 
+
+
+/*these are my conditionals, supposed to change some settings for when the screen gets smaller*/
+
+  @media screen and (min-width: 1000px) {
+    p {
+      text-align: center;
+    }
+   
+}
+  
+  @media screen and (max-width: 999px) {
+    p {
+        text-align: left;
+    }
+    .grid-container div{
+        padding:0px 10px;
+        font-size:10px;
+    }
   }
 
-  .active {
-    color: rgb(105,45,142)
+
+  /*this is my contact page*/
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid darkgrey; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+
+  input[type=submit] {
+    background-color: rgb(139,169,128);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  input[type=submit]:hover {
+    background-color: rgb(139,200,175);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
   }
 
-  /*collapsable menu settings
+
+  /*image overlay settings for photography page*/
+
+  .container {
+    position: sticky;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .container:hover .overlay {
+    opacity: 75%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+    /*collapsable menu settings
 
   .menu-content {
     font-family: 'Oswald', sans-serif; 
@@ -121,14 +303,12 @@ input:checked ~ label {
 input:checked ~ .menu-content {
   max-height: 100%;
 }
-*/
-
-
 
 /*icon is from the noun project, created by Rohith M S*/
 
 
-  /*page layout*/
+
+  /*page layout
 
   .item1 { grid-area: logo; }
   .item2 { grid-area: menu; }
@@ -150,71 +330,15 @@ input:checked ~ .menu-content {
     text-align: center;
     padding: 0px 30px;
     font-size: 30px;
-  }
-
-/*these are my conditionals, supposed to change some settings for when the screen gets smaller*/
-
-  @media screen and (min-width: 1000px) {
-    p {
-      text-align: center;
-    }
-   
-}
+  } */
   
-  @media screen and (max-width: 999px) {
-    p {
-        text-align: left;
-    }
-    .grid-container div{
-        padding:0px 10px;
-        font-size:10px;
-    }
-  }
 
-
-  /*this is my contact page*/
-
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid darkgrey; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-
-  input[type=submit] {
-    background-color: rgb(139,169,128);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: rgb(139,200,175);
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: black;
-    padding: 20px;
-  }
-
-
-  /*photography page layout*/
+  /*photography page layout
 
   .item1 { grid-area: logo; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: header; }
-.item4 { grid-area: photos; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: header; }
+  .item4 { grid-area: photos; }
   
   .grid-container {
     display: grid;
@@ -224,75 +348,4 @@ input:checked ~ .menu-content {
     'menu photos photos photos';
     gap: 10px;
     padding: 10px 10px;
-  }
-
-  
-  .grid-container div {
-    text-align: center;
-    padding: 10px 30px;
-    font-size: 30px;
-  }
-
-/*menu design*/
-
-ul {
-    list-style-type: none;
-    margin: 10px;
-    margin-top: 100px;
-    padding: 20px;
-    width: 150px;
-    font-size: 20px;
-  }
-
-  li a {
-    display: contents;
-    color: lightgray;
-  }
-
-  li a:hover {
-    color: darkgray;
-  }
-
-  .active {
-    color: rgb(139,169,128)
-  }
-
-  /*image overlay settings*/
-
-  .container {
-    position: sticky;
-    width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-    transition: .5s ease;
-    background-color: black;
-  }
-  
-  .container:hover .overlay {
-    opacity: 75%;
-  }
-  
-  .text {
-    color: white;
-    font-size: 7px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+  } */

@@ -1,0 +1,178 @@
+.home {
+    background-image: url("../img/background.jpg");
+    background-size: 2500px;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: darkgrey;
+}
+
+.photo {
+    background-color: black;
+    background-size: 2500px;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: darkgrey;
+  }
+
+  .proddes {
+    background-color: black;
+    background-size: 2500px;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: darkgrey;
+  }
+
+/*font settings*/
+
+p { 
+    font-size: 20px;
+    color: darkgrey;
+}
+  
+  h1 {
+    color: rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: 800;
+}
+
+  h2 {
+    color:rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
+
+  h3{
+    color:rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+  h4 {
+    color:darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+  h5{
+    color:darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+  h6{
+    color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+/*menu settings*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(33,32,30);
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: lightgrey;
+    text-align: center;
+    padding: 16px 40px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  /*flexbox settings overall*/
+
+ .topbar {
+    display: flex;
+    flex-wrap: nonwrap;
+ }
+
+ .logo {
+    flex: 20%;
+    padding: 10px;
+ }
+
+ .menu {
+    flex: 80%;
+    padding: 10px;
+    align-self: center;
+ }
+
+/*home page specific flexbox*/
+
+ .greeting {
+    flex: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 20px;
+ }
+
+ /*photography specific flexbox*/
+
+.column {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.artstate {
+    flex: 35%;
+    padding: 20px;
+}
+
+.material {
+    flex: 65%;
+    padding: 30px;
+    text-align: center;
+}
+
+ /*photography page settings*/
+ .container {
+    position: sticky;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .container:hover .overlay {
+    opacity: 75%;
+  }
+  
+  .text {
+    color: lightgray;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
