@@ -146,6 +146,18 @@ ul {
     text-align: center;
 }
 
+/*photography sticky info*/
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+.sticky + .content {
+    padding-top: 102px;
+  }
+
  /*photography page settings*/
  .container {
     position: sticky;
