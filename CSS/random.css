@@ -34,6 +34,24 @@
     color: darkgrey;
   }
 
+  .imgdes {
+    background-color: black;
+    background-size: 2500px;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: darkgrey;
+  }
+
+  .resume {
+    background-color: black;
+    background-size: 2500px;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: darkgrey;
+  }
+
 /*font settings*/
 
 p { 
@@ -146,17 +164,32 @@ ul {
     text-align: center;
 }
 
-/*photography sticky info*/
-  
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-.sticky + .content {
-    padding-top: 102px;
-  }
+/*image design flexbox settings*/
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.left {
+    flex: 25%;
+    padding: 10px;
+}
+
+.leftcenter {
+    flex: 25%;
+    padding: 10px;
+}
+
+.rightcenter{
+    flex: 25%;
+    padding: 10px;
+}
+
+.right {
+    flex: 25%;
+    padding: 10px;
+}
 
  /*photography page settings*/
  .container {
@@ -231,3 +264,5 @@ ul {
     background-color: black;
     padding: 20px;
   }
+
+  
