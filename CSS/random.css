@@ -120,8 +120,11 @@ ul {
     background-color: #111;
   }
 
-  /*flexbox settings overall*/
+  /*flexbox settings overall computer*/
 
+
+@media screen and (min-width: 1000px)
+{
  .topbar {
     display: flex;
     flex-wrap: nonwrap;
@@ -137,6 +140,27 @@ ul {
     padding: 10px;
     align-self: center;
  }
+}
+
+@media screen and (max-width: 999px)
+{
+    .topbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        flex: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        flex: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+}
 
 /*home page specific flexbox*/
 
@@ -146,7 +170,12 @@ ul {
     padding-top: 10px;
  }
 
- /*photography specific flexbox*/
+
+ /*photography page settings*/
+
+@media screen and (min-width: 1000px)
+{
+     /*photography specific flexbox*/
 
 .column {
     display: flex;
@@ -164,35 +193,7 @@ ul {
     text-align: center;
 }
 
-/*image design flexbox settings*/
-.grid {
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-}
-
-.left {
-    flex: 25%;
-    padding: 10px;
-}
-
-.leftcenter {
-    flex: 25%;
-    padding: 10px;
-}
-
-.rightcenter{
-    flex: 25%;
-    padding: 10px;
-}
-
-.right {
-    flex: 25%;
-    padding: 10px;
-}
-
- /*photography page settings*/
-
+/*general photography page settings*/
 
  .container {
     position: sticky;
@@ -231,6 +232,105 @@ ul {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+}
+
+
+
+/*iphone screen photography*/
+
+@media screen and (max-width: 999px)
+{
+    img{
+        width:70%;
+        height: auto;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    .container {
+        position: sticky;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .artstate {
+        flex: 100%;
+        padding: 20px;
+    }
+    
+    .material {
+        flex: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
+
+/*image design flexbox settings*/
+@media screen and (min-width: 1000px)
+{
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.left {
+    flex: 25%;
+    padding: 10px;
+}
+
+.leftcenter {
+    flex: 25%;
+    padding: 10px;
+}
+
+.rightcenter{
+    flex: 25%;
+    padding: 10px;
+}
+
+.right {
+    flex: 25%;
+    padding: 10px;
+}
+}
+
+@media screen and (max-width: 999px)
+{
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .left{
+        flex: 100%;
+        padding: 10px;
+    }
+
+    .leftcenter{
+        flex: 28%;
+        padding: 10px;
+        padding-left: 10px;
+    }
+
+    .rightcenter {
+        flex: 28%;
+        padding: 10px;
+    }
+
+    .right {
+        flex: 28%;
+        padding:10px;
+    }
+}
 
   /*contact page settings*/
 
