@@ -94,6 +94,27 @@ p {
     font-size: 25px;
 }
 
+ol {
+    border: none;
+    padding: 3px;
+}
+
+button {
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border: 0;
+}
+
+button:hover {
+    color: darkgrey;
+}
+
+button:visited {
+    color: rgb(90,107,71);
+}
+
 /*menu settings*/
 
 ul {
