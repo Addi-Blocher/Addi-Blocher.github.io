@@ -27,6 +27,23 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-btn.setAttribute("class", xxx);
-btn.textContent = xxx;
-overlay.style.backgroundColor = xxx;
+const btn = document.querySelector('button');
+const overlay = document.querySelector('.overlay');
+
+btn.addEventListener('click, darken');
+
+function darken()
+{
+    if (btn.getAttribute('class')=== 'dark')
+    {
+        btn.setAttribute('class', 'light');
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        btn,textContent='Lighten';
+    }
+    else
+    {
+        btn.setAttribute('class','dark');
+        overlay.style.backgroundColor = 'rgba(o,o,o,o)';
+        btn.textContent = 'Darken';
+    }
+}
