@@ -1,4 +1,4 @@
-cont json = 
+const json = 
 {
     "companyName" : "Tech Stars",
     "website" : "www.techstars.site",
