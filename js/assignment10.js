@@ -66,3 +66,5 @@ for (let i = 0; i < json["employees"].length; i++)
         json["employees"][i].raiseEligable = "false";
     }
 }
+
+console.log(json);
