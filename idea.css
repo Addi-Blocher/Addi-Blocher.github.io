@@ -17,7 +17,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   /* Images used */
   .img1 { background-image: url("../photos/me3.jpg"); }
   .img2 { background-image: url("../photos/me1.jpg"); }
@@ -25,6 +25,10 @@ body, html {
   .img4 { background-image: url("../photos/me2.jpg"); }
   .img5 { background-image: url("../photos/background.jpg"); }
   .img6 { background-image: url("../photos/me4.jpg"); }
+
+  .portraits{
+    position: relative;
+  }
   
   /* Position header in the middle of the page/image */
   .bg-text {
@@ -49,6 +53,9 @@ body, html {
 .topnav {
   overflow: hidden;
   background-color: none;
+  position:fixed;
+  top:20px;
+  right:0;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -59,9 +66,8 @@ body, html {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
-  font-size: 17px;
   display: block;
 }
 
@@ -74,7 +80,7 @@ body, html {
   top: 0;
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a green background color on mouse-over */
 .topnav a:hover {
   color: rgb(90,107,71);
 }
@@ -87,20 +93,11 @@ body, html {
 /*flexbox settings*/
 .topbar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
-
 .logo {
   flex: 20%;
   padding: 10px;
-}
-
-.spacer{
-  flex: 60%;
-  padding: none;
-}
-
-.topnav {
-  flex: 20%;
-  padding: 10px;
+  background-color: black;
+  position: relative;
 }

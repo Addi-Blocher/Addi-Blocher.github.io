@@ -1,16 +1,8 @@
 <!--TO DO LIST
 
--ADD CONDITIONALS
--STYLING ELEMENTS
 -add artist statements to my pages
-
-
-
--collapsable menu 
 -logo click takes you back to home
--make sure that the links turn a color when you're on that page
--scrolling self portraits for the main screen
--play around with the color theme
+    ?-make sure that the links turn a color when you're on that page
 -make the logo have a clear background
 -new design ideas for the photo galleries
 -input reel (interactivity?)
@@ -18,59 +10,71 @@
         http://www.pascalvangemert.nl/#/experiences
         https://www.nathanielkoloc.com/
     
--design my header for the index file
 -add social medias somewhere
--play with backgrounds
--Remove bar from behind the menu
+    - need to find a way to overlay my logo on the rest of the images of the background
+    - how to style the hamburger menu 
+    - make the black box behind the hamburger menu the full width of the menu 
 
 -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/random.css">
-
-
+    <title>Addison Blocher</title>
+           <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="idea.css">
 </head>
-<body class="home">
-
+<body>
+    <!--js link-->
+    <script src="idea.js"></script>
+<!--
 <div class="topbar">
-    
-    <!--my logo-->
     <div class="logo">
         <a><img src="../img/logo.jpg" alt="personal logo"
             width="200"
             height="200"></a>
     </div>
+</div>
+-->
+    
+    <!--background images-->
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
 
 
+<div class=".topbar">
+    <!--Heading Text-->
+    <div class="bg-text">I'm Addi</div>
+    
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+    <a href="#home" class="active"></a>
 
-    <!--my nav bar-->
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="../links/photography.html">Photography</a></li>
-            <li><a href="../links/ProductionDesign.html">Production Design</a></li>
-            <li><a href="../links/ImageDesign.html">Image Design</a></li>
-            <li><a href="../links/Resume.html">Resume</a></li>
-            <li><a href="../links/Contact.html">Contact Me</a></li>
-        </ul>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <a href="idea.html">Home</a>
+        <a href="../links/photography.html">Photography</a>
+        <a href="../links/ImageDesign.html">Image Design</a>
+        <a href="../links/ProductionDesign.html">Production Design</a>
+        <a href="../links/Resume.html">Resume</a>
+        <a href="../links/Contact.html">Contact</a>
     </div>
+
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+      <i class="fa fa-bars"></i>
+    </a>-
+  </div>
 </div>
 
-    <!--greeting-->
-    <div class="greeting">
-        <h1>I'm Addi,</h1> 
-            <h1>and I'm a designer.</h1>
-    </div>
 
-
-
-
+    
 </body>
 </html>
