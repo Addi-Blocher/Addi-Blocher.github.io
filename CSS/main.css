@@ -1,346 +1,100 @@
-/*main styling*/
-
-.home {
-    background-image: url("../photos/background.jpg");
-    background-size: 2500px;
-    background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60%;
-    color: darkgrey;
-}
-
-.contact {
-  background-color: black;
-  background-size: 2500px;
-  background-position: center;
+body, html {
+  height: 100%;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 60%;
-  color: darkgrey;
 }
 
-.imgdes {
-  background-color: black;
-  background-size: 2500px;
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 80%;
+
+  /* Center and scale the image nicely */
   background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60%;
-  color: darkgrey;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.photo {
-  background-color: black;
-  background-size: 2500px;
-  background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60%;
-  color: darkgrey;
+/* Images used */
+.img1 { background-image: url("../photos/me3.jpg"); }
+.img2 { background-image: url("../photos/me1.jpg"); }
+.img3 { background-image: url("../photos/me.jpg"); }
+.img4 { background-image: url("../photos/me2.jpg"); }
+.img5 { background-image: url("../photos/background.jpg"); }
+.img6 { background-image: url("../photos/me4.jpg"); }
+
+
+/* Position header in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: rgb(90,107,71);
+  font-weight: bold;
+  font-size: 70px;
+  border: 10px solid rgb(90,107,71);
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
 }
 
-.proddes {
-  background-color: black;
-  background-size: 2500px;
-  background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60%;
-  color: darkgrey;
+
+/* Style the navigation menu */
+.topnav {
+overflow: hidden;
+background-color: black;
+position:fixed;
+top:20px;
+right:0;
 }
 
-.resume {
-  background-color: black;
-  background-size: 2500px;
-  background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60%;
-  color: darkgrey;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+display: none;
 }
 
-
-/*font styling*/
-
-
-p { 
-    font-size: 15px;
-    color: darkgrey;
-}
-  
-  h1 {
-    color: rgb(90,107,71);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    font-weight: 800;
+/* Style navigation menu links */
+.topnav a {
+color: white;
+padding: 16px 16px;
+text-decoration: none;
+display: block;
 }
 
-  h2 {
-    color:rgb(90,107,71);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45;
+/* Style the hamburger menu */
+.topnav a.icon {
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
 }
 
-  h3{
-    color:rgb(90,107,71);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+/* Add a green background color on mouse-over */
+.topnav a:hover {
+color: rgb(90,107,71);
 }
 
-  h4 {
-    color:lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
-}
-  h5{
-    color:lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-}
-  h6{
-    color: lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+/* Style the active link (or home/logo) */
+.active {
+color: darkgrey;
 }
 
-/*flexbox settigs*/
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
+/*flexbox settings*/
+.topbar {
+display: flex;
+flex-wrap: nowrap;
 }
-
 .logo {
-  flex: 20%;
-  padding: 10px;
+flex: 20%;
+padding: 10px;
+background-color: black;
+position: relative;
 }
-
-.menu {
-  flex: 80%;
-  padding: 10px;
-}
-
-.heading {
-  flex: 100%;
-  padding: 10px;
-}
-
-
-/*menu settings*/
-
-  ul {
-    list-style-type: none;
-    margin: 10px;
-    margin-top: 100px;
-    padding: 20px;
-    width: 150px;
-    font-size: 17px;
-  }
-
-  li a {
-    display: block;
-    color: lightgray;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    color: darkgray;
-  } 
-
-
-/*these are my conditionals, supposed to change some settings for when the screen gets smaller*/
-
-  @media screen and (min-width: 1000px) {
-    p {
-      text-align: center;
-    }
-   
-}
-  
-  @media screen and (max-width: 999px) {
-    p {
-        text-align: left;
-    }
-    .grid-container div{
-        padding:0px 10px;
-        font-size:10px;
-    }
-  }
-
-
-  /*this is my contact page*/
-
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid darkgrey; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    margin-bottom: 16px; 
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-
-  input[type=submit] {
-    background-color: rgb(139,169,128);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-
-  input[type=submit]:hover {
-    background-color: rgb(139,200,175);
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: black;
-    padding: 20px;
-  }
-
-
-  /*image overlay settings for photography page*/
-
-  .container {
-    position: sticky;
-    width: 100%;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-    transition: .5s ease;
-    background-color: black;
-  }
-  
-  .container:hover .overlay {
-    opacity: 75%;
-  }
-  
-  .text {
-    color: white;
-    font-size: 7px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-
-
-
-
-
-    /*collapsable menu settings
-
-  .menu-content {
-    font-family: 'Oswald', sans-serif; 
-    padding: 0 0 0 50px;
-}
-.collapsible-menu {
-    background-color: rgb(255, 255, 255);
-    padding: 0px 30px;
-    border-bottom: 3px solid #CDE700;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-}
-
-.collapsible-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-.collapsible-menu a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.collapsible-menu label {
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 56px;
-  display: block;
-  cursor: pointer;
-  background: url(../img2/menu.png) no-repeat left center;
-  padding: 10px 0 10px 50px;
-}
-input#menu {
-  display: none;
-}
-
-input:checked +label {
-  background-image: url(close.png);
-}
-
-.menu-content {
-  max-height: 0;
-  overflow: hidden;
-  font-family: 'Oswald', sans-serif; 
-  padding: 0 0 0 50px;
-}
-
-*/
-
-/* Toggle Effect 
-input:checked ~ label {
-  background-image: url(close.png);
-}
-input:checked ~ .menu-content {
-  max-height: 100%;
-}
-
-/*icon is from the noun project, created by Rohith M S*/
-
-
-
-  /*page layout
-
-  .item1 { grid-area: logo; }
-  .item2 { grid-area: menu; }
-  .item3 { grid-area: greeting; }
-  .item4 { grid-area: text; }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-    'logo greeting greeting greeting greeting'
-    'menu menu text text text'
-    'menu menu text text text';
-    gap: 10px;
-    padding: 10px 10px;
-  }
-
-  
-  .grid-container div {
-    text-align: center;
-    padding: 0px 30px;
-    font-size: 30px;
-  } */
-  
-
-  /*photography page layout
-
-  .item1 { grid-area: logo; }
-  .item2 { grid-area: menu; }
-  .item3 { grid-area: header; }
-  .item4 { grid-area: photos; }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-    'logo header header header'
-    'menu photos photos photos'
-    'menu photos photos photos';
-    gap: 10px;
-    padding: 10px 10px;
-  } */
