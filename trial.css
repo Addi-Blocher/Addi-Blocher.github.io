@@ -1,0 +1,133 @@
+/*overall styles*/
+p { 
+    font-size: 20px;
+    color: darkgrey;
+}
+  
+  h1 {
+    color: rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: 800;
+}
+
+  h2 {
+    color:rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
+
+  h3{
+    color:rgb(90,107,71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+  h4 {
+    color:darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+  h5{
+    color:darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+  h6{
+    color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+ol {
+    border: none;
+    padding: 3px;
+}
+
+ul{
+    border: none;
+    padding: 5px;
+    list-style: none;
+}
+
+button {
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    border: 0;
+}
+
+button:hover {
+    color: darkgrey;
+}
+
+button:visited {
+    color: rgb(90,107,71);
+}
+
+/*Menu Styling*/
+.menu {
+    width: 150px;
+    position: fixed;
+    padding: 20px;
+  }
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: darkgrey;
+    padding: 4px;
+  }
+
+.menu a:hover{
+    color: rgb(90,107,71);
+  }
+
+/*main page styling*/
+.home {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    height: 80%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+    /* Images used */
+    .img1 { background-image: url("../photos/me3.jpg"); }
+    .img2 { background-image: url("../photos/me1.jpg"); }
+    .img3 { background-image: url("../photos/me.jpg"); }
+    .img4 { background-image: url("../photos/me2.jpg"); }
+    .img5 { background-image: url("../photos/background.jpg"); }
+    .img6 { background-image: url("../photos/me4.jpg"); }
+  
+  
+    /* Position header in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: rgb(90,107,71);
+    font-weight: bold;
+    font-size: 70px;
+    border: 10px solid rgb(90,107,71);
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }

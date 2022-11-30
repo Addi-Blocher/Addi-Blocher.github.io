@@ -1,9 +1,5 @@
 .home {
-    background-image: url("../img/background.jpg");
-    background-size: 2500px;
-    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
     color: darkgrey;
 }
 
@@ -116,7 +112,6 @@ button:visited {
 }
 
 /*menu settings*/
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -163,6 +158,7 @@ ul {
  }
 }
 
+/*
 @media screen and (max-width: 999px)
 {
     .topbar {
@@ -182,6 +178,7 @@ ul {
         text-align: center;
     }
 }
+*/
 
 /*home page specific flexbox*/
 
@@ -194,10 +191,11 @@ ul {
 
  /*photography page settings*/
 
+/*
 @media screen and (min-width: 1000px)
 {
      /*photography specific flexbox*/
-
+/*
 .column {
     display: flex;
     flex-wrap: nowrap;
@@ -213,6 +211,7 @@ ul {
     padding: 30px;
     text-align: center;
 }
+*/
 
 /*general photography page settings*/
 
@@ -253,7 +252,7 @@ ul {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
-}
+
 
 
 

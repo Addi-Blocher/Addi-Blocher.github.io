@@ -1,7 +1,109 @@
+/*overall styles*/
+p { 
+  font-size: 20px;
+  color: darkgrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  color: rgb(90,107,71);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 90px;
+  font-weight: 800;
+}
+
+h2 {
+  color:rgb(90,107,71);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 75px;
+}
+
+h3{
+  color:rgb(90,107,71);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+}
+
+h4 {
+  color:darkgrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+h5{
+  color:darkgrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+h6{
+  color: darkgrey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+}
+
+ol {
+  border: none;
+  padding: 3px;
+}
+
+ul{
+  border: none;
+  padding: 5px;
+  list-style: none;
+}
+
+button {
+  color: black;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border: 0;
+}
+
+button:hover {
+  color: darkgrey;
+}
+
+button:visited {
+  color: rgb(90,107,71);
+}
+
+/*Menu Styling*/
+.menu {
+  width: 150px;
+  position: fixed;
+  padding: 20px;
+}
+
+.menu a{
+  display: block;
+  text-decoration: none;
+  color: darkgrey;
+  padding: 4px;
+}
+
+.menu a:hover{
+  color: rgb(90,107,71);
+}
+
+/*Page Stylings*/
+.home {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.photo {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+
+/*main page specific styles*/
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -9,22 +111,20 @@ body, html {
 }
 
 .bg-image {
-  /* Full height */
   height: 80%;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Images used */
-.img1 { background-image: url("../photos/me3.jpg"); }
-.img2 { background-image: url("../photos/me1.jpg"); }
-.img3 { background-image: url("../photos/me.jpg"); }
-.img4 { background-image: url("../photos/me2.jpg"); }
-.img5 { background-image: url("../photos/background.jpg"); }
-.img6 { background-image: url("../photos/me4.jpg"); }
+  /* Images used */
+  .img1 { background-image: url("../photos/me3.jpg"); }
+  .img2 { background-image: url("../photos/me1.jpg"); }
+  .img3 { background-image: url("../photos/me.jpg"); }
+  .img4 { background-image: url("../photos/me2.jpg"); }
+  .img5 { background-image: url("../photos/background.jpg"); }
+  .img6 { background-image: url("../photos/me4.jpg"); }
 
 
 /* Position header in the middle of the page/image */
@@ -45,68 +145,7 @@ body, html {
   text-align: center;
 }
 
-
-/* Style the navigation menu */
-.topnav {
-overflow: hidden;
-background-color: black;
-position:fixed;
-top:20px;
-right:0;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-color: white;
-padding: 16px 16px;
-text-decoration: none;
-display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-background: black;
-display: block;
-position: absolute;
-right: 0;
-top: 0;
-}
-
-/* Add a green background color on mouse-over */
-.topnav a:hover {
-color: rgb(90,107,71);
-}
-
-/* Style the active link (or home/logo) */
-.active {
-color: darkgrey;
-}
-
-/*flexbox settings*/
-.topbar {
-display: flex;
-flex-wrap: nowrap;
-}
-.logo {
-flex: 20%;
-padding: 10px;
-background-color: black;
-position: relative;
-}
-
-
-
-
-
-
-
-/*Photo Carousel*/
-/* Slideshow container */
+/*Photography specific CSS*/
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -147,7 +186,7 @@ position: relative;
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: darkgrey;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
