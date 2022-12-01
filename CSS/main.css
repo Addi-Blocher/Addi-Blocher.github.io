@@ -67,11 +67,32 @@ button:visited {
   color: rgb(90,107,71);
 }
 
+/*flexboxes*/
+.videotext {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 140px;
+}
+
+.artstate {
+  flex: 40%;
+  margin-right: 80px;
+  margin-left: -90px;
+}
+
+.material {
+  flex: 60%;
+  padding: 20px;
+}
+
 /*Menu Styling*/
 .menu {
-  width: 150px;
+  width: 175px;
   position: fixed;
+  right: 20px;
+  top: 5px;
   padding: 20px;
+  text-align: right;
 }
 
 .menu a{
@@ -85,8 +106,26 @@ button:visited {
   color: rgb(90,107,71);
 }
 
-/*Logo Styling*/
 
+/*Flexboxes*/
+/* @media screen and (min-width: 1000px)
+{
+ .topbar {
+    display: flex;
+    flex-wrap: nonwrap;
+ }
+
+ .logo {
+    flex: 20%;
+    padding: 10px;
+ }
+
+ .menu {
+    flex: 80%;
+    padding: 10px;
+    align-self: center;
+ }
+} */
 
 /*Page Stylings*/
 .home {
@@ -111,6 +150,14 @@ button:visited {
   color: darkgrey;
 }
 
+.imgdes  {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  color: darkgrey;
+}
 
 /*main page specific styles*/
 body, html {
@@ -142,7 +189,7 @@ body, html {
 /* Position header in the middle of the page/image */
 .bg-text {
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 1); /* Black w/opacity/see-through */
+  background-color: rgba(0,0,0, .7); /* Black w/opacity/see-through */
   color: rgb(90,107,71);
   font-weight: bold;
   font-size: 70px;
@@ -162,6 +209,7 @@ body, html {
   max-width: 900px;
   position: relative;
   margin: auto;
+  margin-top: 20px;
 }
 
 /* Hide the images by default */
@@ -198,7 +246,7 @@ body, html {
 
 /* Caption text */
 .text {
-  color: darkgrey;
+  color: rgb(90,107,71);
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -241,4 +289,31 @@ body, html {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/*image design specific designs*/
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.left {
+  flex: 25%;
+  padding: 10px;
+}
+
+.leftcenter {
+  flex: 25%;
+  padding: 10px;
+}
+
+.rightcenter{
+  flex: 25%;
+  padding: 10px;
+}
+
+.right {
+  flex: 25%;
+  padding: 10px;
 }
