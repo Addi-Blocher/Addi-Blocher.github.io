@@ -85,12 +85,24 @@ button:visited {
   color: rgb(90,107,71);
 }
 
+/*Logo Styling*/
+
+
 /*Page Stylings*/
 .home {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .photo {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.proddes {
   background-color: black;
   background-size: 2500px;
   background-position: center;
@@ -147,7 +159,7 @@ body, html {
 
 /*Photography specific CSS*/
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 900px;
   position: relative;
   margin: auto;
 }
