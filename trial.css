@@ -1,27 +1,106 @@
-.leftright {
+/*overall styles*/
+p { 
+  font-size: 20px;
+  color: darkgrey;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+  color: rgb(90,107,71);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+h2 {
+  color:rgb(90,107,71);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+}
+
+h3{
+  color:rgb(90,107,71);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+h4 {
+  color:darkgrey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+h5{
+  color:darkgrey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+h6{
+  color: darkgrey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+}
+
+a {
+  font-style: none;
+  color: rgb(90,107,71);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ol {
+  border: none;
+  padding: 3px;
+}
+
+ul{
+  border: none;
+  padding: 5px;
+  list-style: none;
+}
+
+button {
+  color: black;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border: 0;
+}
+
+button:hover {
+  color: darkgrey;
+}
+
+button:visited {
+  color: rgb(90,107,71);
+}
+
+/*flexboxes*/
+.videotext {
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 10px;
+  margin-top: 140px;
 }
 
-.imagescroller {
-  flex: 85%;
+.artstate {
+  flex: 40%;
+  margin-right: 80px;
+  margin-left: -90px;
 }
 
-.menu {
-  flex: 15%;
-  background-color: rgb(90 107 71);
-  /* position: fixed; */
-  text-align: right;
-  right: 20px;
-  top: 250px;
-}
-
-.home {
-  background-color: rgb(90 107 71);
+.material {
+  flex: 60%;
+  padding: 20px;
 }
 
 /*Menu Styling*/
+.menu {
+  width: 175px;
+  position: fixed;
+  right: 20px;
+  top: 5px;
+  padding: 20px;
+  text-align: right;
+  background-color: rgba(0,0,0, .4);
+}
 
 .menu a{
   display: block;
@@ -31,10 +110,90 @@
 }
 
 .menu a:hover{
-  color: white;
+  color: rgb(90,107,71);
 }
 
 
+/*Flexboxes*/
+/* @media screen and (min-width: 1000px)
+{
+ .topbar {
+    display: flex;
+    flex-wrap: nonwrap;
+ }
+
+ .logo {
+    flex: 20%;
+    padding: 10px;
+ }
+
+ .menu {
+    flex: 80%;
+    padding: 10px;
+    align-self: center;
+ }
+} */
+
+/*Page Stylings*/
+.home {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.photo {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.proddes {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.imgdes  {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.film {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.fiber {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.resume {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+/*main page specific styles*/
 body, html {
   height: 100%;
   margin: 0;
@@ -45,7 +204,7 @@ body, html {
 }
 
 .bg-image {
-  height: 100%;
+  height: 80%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -77,4 +236,245 @@ body, html {
   width: 300px;
   padding: 20px;
   text-align: center;
+}
+
+/*Photography specific CSS*/
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 10px 12px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*image design specific designs*/
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.left {
+  flex: 25%;
+  padding: 10px;
+}
+
+.leftcenter {
+  flex: 25%;
+  padding: 10px;
+}
+
+.rightcenter{
+  flex: 25%;
+  padding: 10px;
+}
+
+.right {
+  flex: 25%;
+  padding: 10px;
+  margin-right: 200px;
+}
+
+/*resume specific designs*/
+.resumetotal {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: left;
+}
+
+.resumeleft {
+  flex: 35%;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.resumeright {
+  flex: 65%;
+  padding: 10px;
+  margin-right: 200px;
+}
+
+.filmexp {
+  display: flex;
+  padding: 20px;
+  text-align: left;
+}
+
+.filmleft {
+  flex: 50%;
+  padding: 10px;
+}
+
+.filmright {
+  flex: 50%;
+  padding: 10px;
+  margin-right: 200px;
+}
+
+.title {
+  text-align: center;
+}
+
+/*image design specific css*/
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
