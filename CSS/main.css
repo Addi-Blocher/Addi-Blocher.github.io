@@ -2,42 +2,48 @@
 p { 
   font-size: 20px;
   color: darkgrey;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
   color: rgb(90,107,71);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 90px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
   font-weight: 800;
 }
 
 h2 {
   color:rgb(90,107,71);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 75px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
 }
 
 h3{
   color:rgb(90,107,71);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
 }
 
 h4 {
   color:darkgrey;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
 }
 h5{
   color:darkgrey;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 30px;
 }
 h6{
   color: darkgrey;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 25px;
+}
+
+a {
+  font-style: none;
+  color: rgb(90,107,71);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 ol {
@@ -129,14 +135,14 @@ button:visited {
 
 /*Page Stylings*/
 .home {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .photo {
   background-color: black;
   background-size: 2500px;
   background-position: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 100%;
   color: darkgrey;
 }
@@ -145,7 +151,7 @@ button:visited {
   background-color: black;
   background-size: 2500px;
   background-position: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 100%;
   color: darkgrey;
 }
@@ -154,7 +160,34 @@ button:visited {
   background-color: black;
   background-size: 2500px;
   background-position: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.film {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.fiber {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%;
+  color: darkgrey;
+}
+
+.resume {
+  background-color: black;
+  background-size: 2500px;
+  background-position: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 100%;
   color: darkgrey;
 }
@@ -233,24 +266,22 @@ body, html {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: rgb(90,107,71);
+  color: white;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 10px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
 }
@@ -316,4 +347,43 @@ body, html {
 .right {
   flex: 25%;
   padding: 10px;
+}
+
+/*resume specific designs*/
+.resumetotal {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: left;
+}
+
+.resumeleft {
+  flex: 35%;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+.resumeright {
+  flex: 65%;
+  padding: 10px;
+  margin-right: 200px;
+}
+
+.filmexp {
+  display: flex;
+  padding: 20px;
+  text-align: left;
+}
+
+.filmleft {
+  flex: 50%;
+  padding: 10px;
+}
+
+.filmright {
+  flex: 50%;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
 }
