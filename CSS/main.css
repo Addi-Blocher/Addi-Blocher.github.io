@@ -99,6 +99,7 @@ button:visited {
   top: 5px;
   padding: 20px;
   text-align: right;
+  background-color: rgba(0,0,0, .4);
 }
 
 .menu a{
@@ -323,10 +324,17 @@ body, html {
 }
 
 /*image design specific designs*/
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .grid {
   display: flex;
   flex-wrap: nowrap;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .left {
@@ -347,6 +355,7 @@ body, html {
 .right {
   flex: 25%;
   padding: 10px;
+  margin-right: 200px;
 }
 
 /*resume specific designs*/
@@ -382,6 +391,7 @@ body, html {
 .filmright {
   flex: 50%;
   padding: 10px;
+  margin-right: 200px;
 }
 
 .title {
