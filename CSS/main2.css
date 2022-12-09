@@ -177,7 +177,7 @@
         .menu a{
             text-decoration: none;
             color: darkgrey;
-            padding: 15px;
+            padding: 10px;
         }
 
         .menu a:hover {
@@ -479,6 +479,60 @@
     }
 
 
+/*Fiber Design General Styles*/
+
+/*Fiber Design Styles for Computer*/
+@media screen and (min-width: 900px) {
+    div.gallery {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 275px;
+    }
+    
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+/*Fiber Design Styles for Mobile*/
+
+@media screen and (max-width: 899px) {
+    div.gallery {
+        margin: 30px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 275px;
+    }
+    
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+    
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+
 /*Resume General Styles*/
 
 /*Resume Styles for Computer*/
@@ -537,13 +591,13 @@
         .resumeleft {
             flex: 100%;
             padding: 20px;
-            margin-left: 40px;
+            margin-left: 20px;
         }
         
         .resumeright {
             flex: 100%;
             padding: 10px;
-            margin-right: 200px;
+            margin-left: 20px;
         }
         
         .filmexp {
@@ -565,6 +619,6 @@
         
         .title {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 150px;
         }
     }
