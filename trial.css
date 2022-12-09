@@ -69,47 +69,7 @@ button:hover {
   color: darkgrey;
 }
 
-button:visited {
-  color: rgb(90,107,71);
-}
-
-/*flexboxes*/
-.videotext {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 140px;
-}
-
-.artstate {
-  flex: 40%;
-  margin-right: 80px;
-  margin-left: -90px;
-}
-
-.material {
-  flex: 60%;
-  padding: 20px;
-}
-
-/*Menu Styling*/
-.menu {
-  width: 175px;
-  position: fixed;
-  right: 20px;
-  top: 5px;
-  padding: 20px;
-  text-align: right;
-  background-color: rgba(0,0,0, .4);
-}
-
-.menu a{
-  display: block;
-  text-decoration: none;
-  color: darkgrey;
-  padding: 4px;
-}
-
-.menu a:hover{
+button:active {
   color: rgb(90,107,71);
 }
 
@@ -193,6 +153,29 @@ button:visited {
   color: darkgrey;
 }
 
+
+/*Menu Styling*/
+.menu {
+  width: 175px;
+  position: fixed;
+  right: 20px;
+  top: 5px;
+  padding: 20px;
+  text-align: right;
+  background-color: rgba(0,0,0, .4);
+}
+
+.menu a{
+  display: block;
+  text-decoration: none;
+  color: darkgrey;
+  padding: 4px;
+}
+
+.menu a:hover{
+  color: rgb(90,107,71);
+}
+
 /*main page specific styles*/
 body, html {
   height: 100%;
@@ -226,7 +209,7 @@ body, html {
   background-color: rgba(0,0,0, .7); /* Black w/opacity/see-through */
   color: rgb(90,107,71);
   font-weight: bold;
-  font-size: 70px;
+  font-size: 65px;
   border: 10px solid rgb(90,107,71);
   position: fixed; /* Stay fixed */
   top: 50%;
@@ -398,83 +381,81 @@ body, html {
   text-align: center;
 }
 
-/*image design specific css*/
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+/*prod design flexbox*/
+.videotext {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: left;
+  margin-top: 100px;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.material {
+  flex: 50%;
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
 }
 
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
+.artstate {
+  flex: 500%;
+  padding: 10px;
+  margin-right: 200px;
+  margin-top: 100px;
+} 
+
+body {
+  background-color: black;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: black;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
   display: block;
-  width: 80%;
-  max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: darkgrey;
+  color: black;
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
 }

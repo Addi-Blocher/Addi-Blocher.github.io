@@ -69,47 +69,7 @@ button:hover {
   color: darkgrey;
 }
 
-button:visited {
-  color: rgb(90,107,71);
-}
-
-/*flexboxes*/
-.videotext {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 140px;
-}
-
-.artstate {
-  flex: 40%;
-  margin-right: 80px;
-  margin-left: -90px;
-}
-
-.material {
-  flex: 60%;
-  padding: 20px;
-}
-
-/*Menu Styling*/
-.menu {
-  width: 175px;
-  position: fixed;
-  right: 20px;
-  top: 5px;
-  padding: 20px;
-  text-align: right;
-  background-color: rgba(0,0,0, .4);
-}
-
-.menu a{
-  display: block;
-  text-decoration: none;
-  color: darkgrey;
-  padding: 4px;
-}
-
-.menu a:hover{
+button:active {
   color: rgb(90,107,71);
 }
 
@@ -193,6 +153,29 @@ button:visited {
   color: darkgrey;
 }
 
+
+/*Menu Styling*/
+.menu {
+  width: 175px;
+  position: fixed;
+  right: 20px;
+  top: 5px;
+  padding: 20px;
+  text-align: right;
+  background-color: rgba(0,0,0, .4);
+}
+
+.menu a{
+  display: block;
+  text-decoration: none;
+  color: darkgrey;
+  padding: 4px;
+}
+
+.menu a:hover{
+  color: rgb(90,107,71);
+}
+
 /*main page specific styles*/
 body, html {
   height: 100%;
@@ -226,7 +209,7 @@ body, html {
   background-color: rgba(0,0,0, .7); /* Black w/opacity/see-through */
   color: rgb(90,107,71);
   font-weight: bold;
-  font-size: 70px;
+  font-size: 65px;
   border: 10px solid rgb(90,107,71);
   position: fixed; /* Stay fixed */
   top: 50%;
@@ -323,41 +306,6 @@ body, html {
   to {opacity: 1}
 }
 
-/*image design specific designs*/
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.left {
-  flex: 25%;
-  padding: 10px;
-}
-
-.leftcenter {
-  flex: 25%;
-  padding: 10px;
-}
-
-.rightcenter{
-  flex: 25%;
-  padding: 10px;
-}
-
-.right {
-  flex: 25%;
-  padding: 10px;
-  margin-right: 200px;
-}
-
 /*resume specific designs*/
 .resumetotal {
   display: flex;
@@ -396,4 +344,85 @@ body, html {
 
 .title {
   text-align: center;
+}
+
+/*prod design flexbox*/
+.videotext {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.material {
+  flex: 50%;
+  padding: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.artstate {
+  flex: 500%;
+  padding: 10px;
+  margin-right: 200px;
+  margin-top: 100px;
+} 
+
+body {
+  background-color: black;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*image design styles*/
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: black;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: darkgrey;
+  color: black;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
 }

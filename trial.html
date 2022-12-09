@@ -4,157 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trial</title>
+    <title>Image Design</title>
     <link rel="stylesheet" href="trial.css">
 
 
 </head>
 <body class="imgdes">
 
-<!--Page Menu-->
-<div class="menu">
-    <a href="../index.html">Home</a>
-    <a href="../links/photography.html">Photography</a>
-    <a href="../links/ImageDesign.html">Image Design</a>
-    <a href="../links/ProductionDesign.html">Production Design</a>
-    <a href="../links/filmphotography.html">Film Photography</a>
-    <a href="../links/fibercrafts.html">Fiber Arts</a>
-    <a href="../links/Resume.html">Resume</a>
-</div>
-<div class="title">
-    <h4>Image Design Projects</h4>
-    <p>I dabble in a few different areas of design. Here are some of the projects that I've worked on most recently.</p>
-</div>
-
-
-    <div class="grid">
-        <div class="left">
-            <p>This was a project based on the song <a href="https://www.youtube.com/watch?v=ZES3nJQYJok">Into the Ocean</a> by Blue October.I wanted to theme it after the ocean, but I wanted to add a twist. So, instead of using imagery from the ocean, instead I tried to parallel the ocean to the seas of grass that we have here in Colorado where I grew up. I also wanted to skirt around the color blue, so I used purple and green instead, to allude to the blue of the ocean without using the color outright.</p>
+        <!--Page Menu-->
+        <div class="menu">
+            <a href="../index.html">Home</a>
+            <a href="../links/photography.html">Photography</a>
+            <a href="../links/ImageDesign.html">Image Design</a>
+            <a href="../links/ProductionDesign.html">Production Design</a>
+            <a href="../links/filmphotography.html">Film Photography</a>
+            <a href="../links/fibercrafts.html">Fiber Arts</a>
+            <a href="../links/Resume.html">Resume</a>
         </div>
-        <div class="leftcenter">
-            <img id="myImg" src="../designs/boats.jpg" alt="drawn boats overlaying a portrait of a woman" class="image"
-            style="width:100%;max-width:300px">
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            <!-- Modal Caption (Image Text) -->
-            <div id="caption"></div>
-            </div>
 
-            <img id="myImg" src="../designs/bubbles.jpg" alt="outlined bubbles over a portrait of a woman" class="image"
-            style="width:100%;max-width:300px">
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img02">
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-            </div>
 
-            <img src="../designs/detail.jpg" alt="drawn details over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-        </div>
-        <div class="rightcenter">
-            <img src="../designs/glitch.jpg" alt="a glitch style on a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/lungs.jpg" alt="lungs drawn over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/repeat.jpg" alt="many pictures of a woman fading into black background" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/scream.jpg" alt="a woman screaming twice" class="image"
-            height="20%"
-            width="20%">
-        </div>
-        <div class="right">
-            <img src="../designs/space.jpg" alt="a woman in space" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/stones.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/whales.jpg" alt="cut out whales over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-        </div>
-    </div> 
-
+    <h2>Image Design Portfolio</h2>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> All Designs</button>
+      <button class="btn" onclick="filterSelection('ocean')"> Into the Ocean</button>
+      <button class="btn" onclick="filterSelection('Stick')"> Stick Season</button>
+      <button class="btn" onclick="filterSelection('portraits')"> Remember(ed) Portraits</button>
+    </div>
     
-    <div class="grid">
-        <div class="left"> 
-            <img src="../designs/portraits/abby.jpg" alt="a woman in space" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/addi.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/alex.jpg" alt="cut out whales over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/ayla.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/dad.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/boats.jpg" alt="Mountains" style="width:100%">
+          <h4>Boats</h4>
+          <p>Lorem ipsum dolor..</p>
         </div>
-        <div class="leftcenter">
-            <img src="../designs/portraits/dan.jpg" alt="drawn boats overlaying a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/kim.jpg" alt="outlined bubbles over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/kulani.jpg" alt="drawn details over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/misha.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/myles.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/glitch.jpg" alt="Mountains" style="width:100%">
+          <h4>Glitch</h4>
+          <p>Lorem ipsum dolor..</p>
         </div>
-        <div class="rightcenter">
-            <img src="../designs/portraits/nathaniel.jpg" alt="a glitch style on a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/phylis.jpg" alt="lungs drawn over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/rob.jpg" alt="many pictures of a woman fading into black background" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/robert.jpg" alt="a woman screaming twice" class="image"
-            height="20%"
-            width="20%">
-            <img src="../designs/portraits/victor.jpg" alt="a basic drawing of a stack of stones over a portrait of a woman" class="image"
-            height="20%"
-            width="20%">
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/lungs.jpg" alt="Mountains" style="width:100%">
+          <h4>Lungs</h4>
+          <p>Lorem ipsum dolor..</p>
         </div>
-        <div class="right">
-            <p>These portraits I did for a movie that I wrote and co-directed a couple years ago called <a href="https://www.imdb.com/title/tt17491930/?ref_=nv_sr_srsg_0">Remember(ed)</a> We took stills of all of our characters and our crew from set and I drew these stylized portraits for our credits. A special thanks to our cast and crew for being such wonderful models!</p>
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/repeat.jpg" alt="Mountains" style="width:100%">
+          <h4>Repeat</h4>
+          <p>Lorem ipsum dolor..</p>
         </div>
-    </div> 
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/scream.jpg" alt="Mountains" style="width:100%">
+          <h4>Scream</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/space.jpg" alt="Mountains" style="width:100%">
+          <h4>Space</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/stones.jpg" alt="Mountains" style="width:100%">
+          <h4>Stones</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/whales.jpg" alt="Mountains" style="width:100%">
+          <h4>Whales</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/bubbles.jpg" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column ocean">
+        <div class="content">
+          <img src="../designs/detail.jpg" alt="Nature" style="width:100%">
+          <h4>Details</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
 
 
 
-            
-        <!--my logo
-        <div class="logo">
-            <a><img src="../img/logo.jpg" alt="personal logo"
-                width="200"
-                height="200"></a>
-        </div>-->
 
-            <script src="trial.js"></script>
+      <div class="column stick">
+        <div class="content">
+          <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+          <h4>Retra</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column stick">
+        <div class="content">
+          <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column stick">
+        <div class="content">
+          <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+
+
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/abby.jpg" alt="People" style="width:100%">
+          <h4>Abby</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/addi.jpg" alt="People" style="width:100%">
+          <h4>Addi</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/alex.jpg" alt="People" style="width:100%">
+          <h4>Alex</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/ayla.jpg" alt="People" style="width:100%">
+          <h4>Ayla</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/dad.jpg" alt="People" style="width:100%">
+          <h4>Jerry</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/dan.jpg" alt="People" style="width:100%">
+          <h4>Dan</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/kim.jpg" alt="People" style="width:100%">
+          <h4>Kim</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/kulani.jpg" alt="People" style="width:100%">
+          <h4>Kulani</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/misha.jpg" alt="People" style="width:100%">
+          <h4>Misha</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/myles.jpg" alt="People" style="width:100%">
+          <h4>Myles</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/nathaniel.jpg" alt="People" style="width:100%">
+          <h4>Nathaniel</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/phylis.jpg" alt="People" style="width:100%">
+          <h4>Phylis</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/rob.jpg" alt="People" style="width:100%">
+          <h4>Rob</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/robert.jpg" alt="People" style="width:100%">
+          <h4>Robert</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column portraits">
+        <div class="content">
+          <img src="../designs/portraits/victor.jpg" alt="People" style="width:100%">
+          <h4>Victor</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+ <script src="trial.js"></script>
 </body>
 </html>

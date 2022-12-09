@@ -1,0 +1,570 @@
+/* Basic Font Styles */
+
+    p { 
+        font-size: 20px;
+        color: darkgrey;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    h1 {
+        color: rgb(90,107,71);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    h2 {
+        color:rgb(90,107,71);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 45px;
+    }
+    
+    h3{
+        color:rgb(90,107,71);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+    }
+    
+    h4 {
+        color:darkgrey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 35px;
+    }
+    h5{
+        color:darkgrey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+    h6{
+        color: darkgrey;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+    
+    a {
+        font-style: none;
+        color: rgb(90,107,71);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    ol {
+        border: none;
+        padding: 3px;
+    }
+    
+    ul{
+        border: none;
+        padding: 5px;
+        list-style: none;
+    }
+    
+    button {
+        color: black;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        border: 0;
+    }
+    
+    button:hover {
+        color: darkgrey;
+    }
+    
+    button:active {
+        color: rgb(90,107,71);
+    }
+
+
+/* Page Styles */
+
+    .home {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: black;
+    }
+
+    .photo {
+        background-color: black;
+        background-size: 2500px;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: darkgrey;
+    }
+
+    .proddes {
+        background-color: black;
+        background-size: 2500px;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: darkgrey;
+    }
+
+    .imgdes  {
+        background-color: black;
+        background-size: 2500px;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: darkgrey;
+    }
+
+    .film {
+        background-color: black;
+        background-size: 2500px;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: darkgrey;
+    }
+
+    .fiber {
+        background-color: black;
+        background-size: 2500px;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: darkgrey;
+    }
+
+    .resume {
+        background-color: black;
+        background-size: 2500px;
+        background-position: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100%;
+        color: darkgrey;
+    }
+
+
+/*Menu Styles for Computer*/
+
+    @media screen and (min-width: 900px) {
+        .menu {
+            width: 175px;
+            position: fixed;
+            right: 20px;
+            top: 5px;
+            padding: 20px;
+            text-align: right;
+            background-color: rgba(0,0,0, .4);
+        }
+
+        .menu a{
+            display: block;
+            text-decoration: none;
+            color: darkgrey;
+            padding: 4px;
+        }
+        
+        .menu a:hover{
+            color: rgb(90,107,71);
+        }
+    }
+
+
+/*Menu Styles for Mobile*/
+
+    @media screen and (max-width: 899px) {
+        .menu {
+            position: fixed;
+            top: 0px;
+            padding: 20px;
+            text-align: center;
+            background-color: black;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: darkgrey;
+            padding: 15px;
+        }
+
+        .menu a:hover {
+            color: rgb(90,107,71);
+        }
+    }
+
+
+/*General Main Page Styles*/
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .bg-image {
+        height: 80%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Images used */
+    .img1 { background-image: url("../photos/me3.jpg"); }
+    .img2 { background-image: url("../photos/me1.jpg"); }
+    .img3 { background-image: url("../photos/me.jpg"); }
+    .img4 { background-image: url("../photos/me2.jpg"); }
+    .img5 { background-image: url("../photos/background.jpg"); }
+    .img6 { background-image: url("../photos/me4.jpg"); }
+
+    .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, .7); /* Black w/opacity/see-through */
+        color: rgb(90,107,71);
+        font-weight: bold;
+        font-size: 65px;
+        border: 10px solid rgb(90,107,71);
+        position: fixed; /* Stay fixed */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+/*Photography General Styles*/
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /*Number text at the top*/
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+    
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+
+/*Photography Styles for Computer*/
+
+    @media screen and (min-width: 900px) {
+        .slideshow-container {
+            max-width: 900px;
+            position: relative;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .text {
+            color: white;
+            font-size: 15px;
+            padding: 10px 12px;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+          }
+            /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    }
+
+    
+/*Photography Styles for Mobile*/
+
+    @media screen and (max-width: 899px) {
+        .slideshow-container {
+            max-width: 350px;
+            position: relative;
+            margin: auto;
+            margin-top: 40%;
+        }
+
+        .text {
+            color: white;
+            font-size: 13px;
+            padding: 10px 12px;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+          }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    }
+
+
+/*Image Design General Styles*/
+
+    .row,
+    .row > .column {
+    padding: 8px;
+    }
+
+    
+
+
+/*Image Design Styles for Computer*/
+
+    @media screen and (min-width: 900px) {
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none; /*hides columns by default*/
+        }
+    }
+
+
+/*Image Design Styles for Mobile*/
+
+    @media screen and (max-width: 899px) {
+        .column {
+            float: left;
+            width: 100%;
+            display: none;
+        }
+    }
+
+/*Image Design General Styles*/
+
+
+    /* Clear floats after rows */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .content {
+        background-color: black;
+        padding: 10px;
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+        display: block;
+    }
+
+    /* Style the buttons */
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: darkgrey;
+        color: black;
+        cursor: pointer;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .btn:hover {
+        background-color: #ddd;
+    }
+    
+    /* Add a dark background color to the active button */
+    .btn.active {
+        background-color: #666;
+        color: white;
+    }
+
+
+/*Production Design General Design*/
+
+
+/*Production Design Styles for Computer*/
+    @media screen and (min-width: 900px) {
+        .videotext {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+        }
+
+        .material {
+            flex: 70%;
+            padding: 20px;
+            margin-left: 20px;
+            margin-top: 20%;
+        }
+
+        .artstate {
+            flex: 30%;
+            padding: 10px;
+            margin-right: 200px;
+            margin-top: 100px;
+        }
+    }
+
+
+/*Production Design Styles for Mobile*/
+    @media screen and (max-width: 899px) {
+        .videotext {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 40%;
+        }
+
+        .material {
+            flex: 100%;
+            padding: 20px;
+            margin-left: 20px;
+        }
+
+        .artstate {
+            flex: 100%;
+            padding: 10px;
+        }
+    }
+
+
+/*Resume General Styles*/
+
+/*Resume Styles for Computer*/
+
+    @media screen and (min-width: 900px) {
+        .resumetotal {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: left;
+        }
+        
+        .resumeleft {
+            flex: 35%;
+            padding: 20px;
+            margin-left: 40px;
+        }
+        
+        .resumeright {
+            flex: 65%;
+            padding: 10px;
+            margin-right: 200px;
+        }
+        
+        .filmexp {
+            display: flex;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .filmleft {
+            flex: 50%;
+            padding: 10px;
+        }
+        
+        .filmright {
+            flex: 50%;
+            padding: 10px;
+            margin-right: 200px;
+        }
+        
+        .title {
+            text-align: center;
+        }
+    }
+
+
+/*Resume Designs for Mobile*/
+
+    @media screen and (max-width: 899px) {
+        .resumetotal {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+        
+        .resumeleft {
+            flex: 100%;
+            padding: 20px;
+            margin-left: 40px;
+        }
+        
+        .resumeright {
+            flex: 100%;
+            padding: 10px;
+            margin-right: 200px;
+        }
+        
+        .filmexp {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .filmleft {
+            flex: 100%;
+            padding: 10px;
+        }
+        
+        .filmright {
+            flex: 100%;
+            padding: 10px;
+        }
+        
+        .title {
+            text-align: center;
+            margin-top: 100px;
+        }
+    }
