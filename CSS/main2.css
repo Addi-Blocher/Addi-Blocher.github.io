@@ -525,8 +525,8 @@
     div.gallery {
         margin: 30px;
         border: 1px solid #ccc;
-        float: left;
-        width: 275px;
+        float: center;
+        width: 325px;
     }
     
     div.gallery:hover {
